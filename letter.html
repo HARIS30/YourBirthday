@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter for You</title>
+
+    <!-- Font elegan -->
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #D2B48C;
+            font-family: 'Fredoka One', cursive;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* halaman tidak di-scroll */
+            gap: 15px; /* dikurangi dari 25px agar jarak lebih dekat */
+        }
+
+        /* Judul elegan */
+        h1 {
+            font-family: 'Alex Brush', cursive;
+            color: #2E3A8C;
+            font-size: 70px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            margin: 0 0 5px 0; /* jarak bawah diperkecil */
+        }
+
+        /* Area surat */
+        .letter-container {
+            background-color: #fff;
+            color: #4169E1;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            width: 90%;
+            max-width: 700px;
+            height: 60vh;
+            padding: 30px;
+            overflow-y: scroll;
+            text-align: left;
+            line-height: 1.6;
+
+            /* Hilangkan scrollbar (cross-browser) */
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .letter-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        button {
+            background-color: #4169E1;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            cursor: pointer;
+            border-radius: 50px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            transform: translateY(-5px); /* sedikit naik agar proporsional */
+        }
+
+        button:hover {
+            background-color: #36599F;
+            transform: scale(1.1) translateY(-5px);
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>💌 Letter for You 💌</h1>
+
+    <div class="letter-container">
+        <p>Dear Kevin,</p>
+        <p>Haii bocil. Happy Birthday 🎂🎉</p>
+        <p>Aku tau ucapan ini telat aku berikan ke kamu di bulan November ini wkwkwk. Maaf kalua ngasih ucapan dan html ini telat ke kamunya. Udah lama sih sebenernya base html ini ada, terus baru aku selesai in bulan ini karena sadar ada di desktop.</p>
+        <p>Sekali lagi habede yaa! I hope you are always healthy, live long, and always happy.</p>
+        <p>Aku bahagia takdir mempertemukan kita di awal tahun ini, dan berlanjut. Bahagia aja bisa cerita cerita sama kamu, yapping ke kamu, keluh kesah ke kamu, dan apapun itu ke kamu dulu. Makasih ya atas semuanya. Dan juga aku minta maaf sebesar besar nya kalau dulu aku kadang nuduh kamu yang aneh aneh. Maaf juga kalau dulu aku sempet ngelarang kamu suka ke aku karena aku nya takut gabisa ngasih feedback ke kamunya, eh sekarang malah aku yang kecintaan ke kamu nya, ya begitulah dunia yaa, love you kev.</p>
+        <p>Disini aku jujur senang punya kamu, bahagia sih bahagia banget. Sekarang gatau rasanya kebawa sedih aja kadang ngelewati fia karena selalu keinget kamu mulu. Kaya berharap ada peluang ketemu atau papasan sama kamu baik itu di fia atau pun di perpus atau laprek gitu wkwkwk.</p>
+        <p>Lastly, Happy Birthday to You, Love you</p>
+        <p>Miss you, I still love you, can you come back to me?</p>
+    </div>
+
+    <button onclick="window.location.href='main.html'">Kembali ke Halaman Utama</button>
+
+    <!-- Musik sebagai backsound -->
+    <audio autoplay loop>
+        <source src="blue.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
